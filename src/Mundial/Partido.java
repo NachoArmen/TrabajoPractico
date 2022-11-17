@@ -20,4 +20,13 @@ public class Partido {
     public Equipo getVisitante() {
         return visitante;
     }
+
+    public Partido partido(Date date,Equipo equipoLocal,Equipo equipoVisitante){
+      return this;
+    }
+
+
+
+
+
 }
