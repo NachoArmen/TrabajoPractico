@@ -1,4 +1,4 @@
-package Vehiculos;
+package SistemaGaraje;
 
 public class Main {
     public static void main(String[] args) {
