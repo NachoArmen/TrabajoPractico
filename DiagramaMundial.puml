@@ -30,7 +30,6 @@ class Mundial.Partido {
 + Resultado getResultado()
 + Equipo getLocal()
 + Equipo getVisitante()
-+ Partido partido(Date,Equipo,Equipo)
 }
 class Mundial.Main {
 }

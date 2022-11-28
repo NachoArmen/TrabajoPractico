@@ -30,7 +30,7 @@ public class Partido {
         return visitante;
     }
 
-    
+
 
 
 
