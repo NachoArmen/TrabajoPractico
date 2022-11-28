@@ -30,9 +30,7 @@ public class Partido {
         return visitante;
     }
 
-    public Partido partido(Date date,Equipo equipoLocal,Equipo equipoVisitante){
-      return this;
-    }
+    
 
 
 
