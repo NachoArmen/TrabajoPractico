@@ -1,4 +1,4 @@
 package Mundial;
 
-public class Llave {
+public class Llave extends EtapaMundial {
 }
