@@ -10,6 +10,33 @@ public class Garaje {
     private double precioRueda;
     private Date horaApertura;
 
+
+
+    Garaje(Date horaApertura){
+        this.setHoraApertura(horaApertura);
+    }
+    Garaje(Date horaApertura, int capacidadMaxima){
+        this.setHoraApertura(horaApertura);
+        this.setCapacidadMaxima(capacidadMaxima);
+    }
+    Garaje(Date horaApertura,int capacidadMaxima, int capacidadActual){
+        this.setHoraApertura(horaApertura);
+        this.setCapacidadMaxima(capacidadMaxima);
+        this.setCapacidadActual(capacidadActual);
+    }
+
+    Garaje(Date horaApertura,int capacidadMaxima, int capacidadActual, double precioRueda){
+        this.setHoraApertura(horaApertura);
+        this.setCapacidadMaxima(capacidadMaxima);
+        this.setCapacidadActual(capacidadActual);
+        this.setPrecioRueda(precioRueda);
+    }
+
+
+
+
+
+
     public int getCapacidadMaxima() {
         return capacidadMaxima;
     }
