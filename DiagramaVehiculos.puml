@@ -1,28 +1,14 @@
 @startuml
-class Vehiculos.Main {
-+ {static} void main(String[])
-}
-class Vehiculos.Moto {
-- String cilindrada
-- int cantRuedas
-+ String getCilindrada()
-+ void setCilindrada(String)
-+ int getCantRuedas()
-+ void setCantRuedas(int)
-}
-class Vehiculos.Coche {
-- int cantPuertas
-- int cantRuedas
-+ int getCantPuertas()
-+ void setCantPuertas(int)
-+ int getCantRuedas()
-+ void setCantRuedas(int)
-}
 class Vehiculos.Vehiculo {
 - String marca
 - double kilometraje
 - String patente
 - String color
+~ <<Create>> Vehiculo()
+~ <<Create>> Vehiculo(String)
+~ <<Create>> Vehiculo(String,double)
+~ <<Create>> Vehiculo(String,double,String)
+~ <<Create>> Vehiculo(String,double,String,String)
 + String getMarca()
 + void setMarca(String)
 + double getKilometraje()
@@ -31,6 +17,31 @@ class Vehiculos.Vehiculo {
 + void setColor(String)
 + String getPatente()
 + void setPatente(String)
+}
+class Vehiculos.Moto {
+- String cilindrada
+- int cantRuedas
+~ <<Create>> Moto()
+~ <<Create>> Moto(String)
+~ <<Create>> Moto(String,int)
++ String getCilindrada()
++ void setCilindrada(String)
++ int getCantRuedas()
++ void setCantRuedas(int)
+}
+class Vehiculos.Coche {
+- int cantPuertas
+- int cantRuedas
+~ <<Create>> Coche()
+~ <<Create>> Coche(int)
+~ <<Create>> Coche(int,int)
++ int getCantPuertas()
++ void setCantPuertas(int)
++ int getCantRuedas()
++ void setCantRuedas(int)
+}
+class Vehiculos.Main {
++ {static} void main(String[])
 }
 
 
