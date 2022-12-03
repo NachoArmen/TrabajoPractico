@@ -1,0 +1,51 @@
+@startuml
+class Mundial.Equipo {
+- String nombre
+- ArrayList<Partido> partidos
++ String getNombre()
++ void setNombre(String)
+}
+class Mundial.Grupo {
+}
+class Mundial.Resultado {
+- int golesLocal
+- int golesVisitante
+- boolean ganoLocal
+- boolean empate
+~ <<Create>> Resultado()
+~ <<Create>> Resultado(int,int,boolean)
++ int getGolesLocal()
++ int getGolesVisitante()
++ boolean isGanoLocal()
++ void setGanoLocal(boolean)
++ boolean isEmpate()
++ void setEmpate(boolean)
+}
+class Mundial.Partido {
+- Date fecha
+- Equipo local
+- Equipo visitante
+- Resultado resultado
+~ <<Create>> Partido(Date,Equipo,Equipo)
++ Resultado getResultado()
++ Equipo getLocal()
++ Equipo getVisitante()
+}
+class Mundial.Main {
+}
+class Mundial.Llave {
+}
+class Mundial.EtapaMundial {
+- String descripcionEtapa
+- ArrayList<Partido> partidos
+~ <<Create>> EtapaMundial()
++ String getDescripcionEtapa()
++ void setDescripcionEtapa(String)
++ ArrayList<Partido> getPartidos()
++ void setPartidos(ArrayList<Partido>)
+}
+
+
+Mundial.EtapaMundial <|-- Mundial.Grupo
+Mundial.EtapaMundial <|-- Mundial.Llave
+@enduml

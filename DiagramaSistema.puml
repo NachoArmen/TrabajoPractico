@@ -1,0 +1,23 @@
+@startuml
+class SistemaGaraje.GarajeTest {
+- Garaje garaje
+}
+class SistemaGaraje.Garaje {
+- ArrayList<Vehiculo> vehiculos
+- int capacidadMaxima
+- int capacidadActual
+- double precioRueda
+- Date horaApertura
++ int getCapacidadMaxima()
++ void setCapacidadMaxima(int)
++ int getCapacidadActual()
++ void setCapacidadActual(int)
++ double getPrecioRueda()
++ void setPrecioRueda(double)
++ Date getHoraApertura()
++ void setHoraApertura(Date)
+}
+class SistemaGaraje.Main {
++ {static} void main(String[])
+}
+@enduml

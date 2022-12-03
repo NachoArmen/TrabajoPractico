@@ -1,0 +1,39 @@
+@startuml
+class Vehiculos.Main {
++ {static} void main(String[])
+}
+class Vehiculos.Moto {
+- String cilindrada
+- int cantRuedas
++ String getCilindrada()
++ void setCilindrada(String)
++ int getCantRuedas()
++ void setCantRuedas(int)
+}
+class Vehiculos.Coche {
+- int cantPuertas
+- int cantRuedas
++ int getCantPuertas()
++ void setCantPuertas(int)
++ int getCantRuedas()
++ void setCantRuedas(int)
+}
+class Vehiculos.Vehiculo {
+- String marca
+- double kilometraje
+- String patente
+- String color
++ String getMarca()
++ void setMarca(String)
++ double getKilometraje()
++ void setKilometraje(double)
++ String getColor()
++ void setColor(String)
++ String getPatente()
++ void setPatente(String)
+}
+
+
+Vehiculos.Vehiculo <|-- Vehiculos.Moto
+Vehiculos.Vehiculo <|-- Vehiculos.Coche
+@enduml
