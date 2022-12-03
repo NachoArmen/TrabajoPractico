@@ -22,19 +22,23 @@ public class Resultado {
 
 
     public int getGolesLocal() {
+
         return golesLocal;
     }
 
     public int getGolesVisitante() {
+
         return golesVisitante;
     }
 
 
     public boolean isGanoLocal() {
+
         return ganoLocal;
     }
 
     public void setGanoLocal(boolean ganoLocal) {
+
         this.ganoLocal = ganoLocal;
     }
 
