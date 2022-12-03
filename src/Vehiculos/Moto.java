@@ -4,6 +4,22 @@ public class Moto extends Vehiculo {
     private String cilindrada;
     private int cantRuedas;
 
+
+
+    Moto(){
+
+    }
+
+    Moto(String cilindrada){
+        this.setCilindrada(cilindrada);
+    }
+
+    Moto(String cilindrada, int cantRuedas){
+        this.setCilindrada(cilindrada);
+        this.setCantRuedas(cantRuedas);
+    }
+
+
     public String getCilindrada() {
         return cilindrada;
     }
