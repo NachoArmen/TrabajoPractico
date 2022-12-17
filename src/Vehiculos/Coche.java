@@ -4,20 +4,14 @@ public class Coche extends Vehiculo {
     private int cantPuertas;
 
 
-    Coche(){
 
-    }
 
-    Coche(int cantPuertas){
-        this.setCantPuertas(cantPuertas);
-    }
 
-    Coche(String marca, double kilometraje, String patente, String color, int cantRuedas, int cantPuertas){
+    public Coche(String marca, double kilometraje, String patente, String color, int cantPuertas){
         this.setColor(color);
         this.setPatente(patente);
         this.setKilometraje(kilometraje);
         this.setMarca(marca);
-        this.setCantRuedas(cantRuedas);
         this.setCantPuertas(cantPuertas);
     }
 
