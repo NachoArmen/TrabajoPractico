@@ -6,15 +6,18 @@ public class Vehiculo {
     private String patente;
     private String color;
 
+    private int cantRuedas;
+
 
     Vehiculo(){
 
     }
-     Vehiculo(String marca, double kilometraje, String patente, String color){
+     Vehiculo(String marca, double kilometraje, String patente, String color, int cantRuedas){
         this.setColor(color);
         this.setPatente(patente);
         this.setKilometraje(kilometraje);
         this.setMarca(marca);
+        this.setCantRuedas(cantRuedas);
     }
     public String getMarca() {
         return marca;
@@ -46,5 +49,13 @@ public class Vehiculo {
 
     public void setPatente(String patente) {
         this.patente = patente;
+    }
+
+    public int getCantRuedas() {
+        return cantRuedas;
+    }
+
+    public void setCantRuedas(int cantRuedas) {
+        this.cantRuedas = cantRuedas;
     }
 }
