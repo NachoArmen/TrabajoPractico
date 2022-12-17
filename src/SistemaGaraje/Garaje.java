@@ -1,6 +1,6 @@
 package SistemaGaraje;
 import Vehiculos.Vehiculo;
-import java.util.Date;
+
 import java.util.ArrayList;
 
 public class Garaje {
@@ -10,6 +10,8 @@ public class Garaje {
     private double precioRueda;
     private int horaApertura;
     private boolean maximoAlcanzado;
+
+
 
 
     Garaje(){
@@ -78,13 +80,13 @@ public class Garaje {
     }
 
     // BOOLEAN PARA CAPACIDAD MAXIMA
-    public boolean maximoAlcanzado(){
+    public boolean topeMaximo(){
         return this.vehiculos.size()>=capacidadMaxima;
     }
 
     // AGREGO VEHICULO SI NO SE CUMPLE LA CONDICION ANTERIOR
-    public void PonerVehiculo(Vehiculo vehiculos){
-        if (maximoAlcanzado())return;
+    public void addVehiculo(Vehiculo vehiculos){
+        if (topeMaximo())return;
         this.vehiculos.add(vehiculos);
     }
 
@@ -106,7 +108,7 @@ public class Garaje {
         double sumaTotalRuedas= 0;
 
         for (int i=0; i< vehiculos.size(); i++){
-            sumaTotalRuedas=sumaTotalRuedas + this.vehiculos.get(i).setCantRuedas();
+            sumaTotalRuedas=sumaTotalRuedas + this.vehiculos.get(i).getCantRuedas();
         }
         return sumaTotalRuedas * precioRueda;
     }
@@ -119,4 +121,6 @@ public class Garaje {
     public void setHoraApertura(int horaApertura) {
         this.horaApertura = horaApertura;
     }
+
+    
 }
