@@ -29,5 +29,5 @@ public class Moto extends Vehiculo {
     public void setCilindrada(String cilindrada) {
         this.cilindrada = cilindrada;
     }
-    
+
 }
