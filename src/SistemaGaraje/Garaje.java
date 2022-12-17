@@ -11,18 +11,8 @@ public class Garaje {
     private Date horaApertura;
 
 
+    Garaje(){
 
-    Garaje(Date horaApertura){
-        this.setHoraApertura(horaApertura);
-    }
-    Garaje(Date horaApertura, int capacidadMaxima){
-        this.setHoraApertura(horaApertura);
-        this.setCapacidadMaxima(capacidadMaxima);
-    }
-    Garaje(Date horaApertura,int capacidadMaxima, int capacidadActual){
-        this.setHoraApertura(horaApertura);
-        this.setCapacidadMaxima(capacidadMaxima);
-        this.setCapacidadActual(capacidadActual);
     }
 
     Garaje(Date horaApertura,int capacidadMaxima, int capacidadActual, double precioRueda){
@@ -30,6 +20,7 @@ public class Garaje {
         this.setCapacidadMaxima(capacidadMaxima);
         this.setCapacidadActual(capacidadActual);
         this.setPrecioRueda(precioRueda);
+        this.vehiculos= new ArrayList<Vehiculo>();
     }
 
 
@@ -67,5 +58,13 @@ public class Garaje {
 
     public void setHoraApertura(Date horaApertura) {
         this.horaApertura = horaApertura;
+    }
+
+    public ArrayList<Vehiculo> getVehiculos() {
+        return vehiculos;
+    }
+
+    public void setVehiculos(ArrayList<Vehiculo> vehiculos) {
+        this.vehiculos = vehiculos;
     }
 }
