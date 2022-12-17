@@ -13,12 +13,13 @@ public class Moto extends Vehiculo {
         this.setCilindrada(cilindrada);
     }
 
-    Moto(String cilindrada,String marca, String patente, String color, double kilometraje){
+    Moto(String cilindrada,String marca, String patente, String color, double kilometraje, int cantRuedas){
         this.setCilindrada(cilindrada);
         this.setMarca(marca);
         this.setKilometraje(kilometraje);
         this.setPatente(patente);
         this.setColor(color);
+        this.setCantRuedas(cantRuedas);
     }
 
 
