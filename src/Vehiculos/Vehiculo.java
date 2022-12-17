@@ -7,32 +7,15 @@ public class Vehiculo {
     private String color;
 
 
-    Vehiculo() {
+    Vehiculo(){
 
     }
-
-    Vehiculo(String marca) {
-        this.setMarca(marca);
-    }
-
-    Vehiculo(String marca, double kilometraje){
-        this.setMarca(marca);
-        this.setKilometraje(kilometraje);
-    }
-
-    Vehiculo(String marca, double kilometraje, String patente){
-        this.setMarca(marca);
-        this.setKilometraje(kilometraje);
-        this.setPatente(patente);
-    }
-
-    Vehiculo(String marca, double kilometraje, String patente, String color){
-        this.setMarca(marca);
-        this.setKilometraje(kilometraje);
-        this.setPatente(patente);
+     Vehiculo(String marca, double kilometraje, String patente, String color){
         this.setColor(color);
+        this.setPatente(patente);
+        this.setKilometraje(kilometraje);
+        this.setMarca(marca);
     }
-
     public String getMarca() {
         return marca;
     }
