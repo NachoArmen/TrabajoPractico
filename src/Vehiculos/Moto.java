@@ -2,7 +2,6 @@ package Vehiculos;
 
 public class Moto extends Vehiculo {
     private String cilindrada;
-    private int cantRuedas;
 
 
 
@@ -14,9 +13,8 @@ public class Moto extends Vehiculo {
         this.setCilindrada(cilindrada);
     }
 
-    Moto(String cilindrada, int cantRuedas, String marca, String patente, String color, double kilometraje){
+    Moto(String cilindrada,String marca, String patente, String color, double kilometraje){
         this.setCilindrada(cilindrada);
-        this.setCantRuedas(cantRuedas);
         this.setMarca(marca);
         this.setKilometraje(kilometraje);
         this.setPatente(patente);
@@ -31,12 +29,5 @@ public class Moto extends Vehiculo {
     public void setCilindrada(String cilindrada) {
         this.cilindrada = cilindrada;
     }
-
-    public int getCantRuedas() {
-        return cantRuedas;
-    }
-
-    public void setCantRuedas(int cantRuedas) {
-        this.cantRuedas = cantRuedas;
-    }
+    
 }
