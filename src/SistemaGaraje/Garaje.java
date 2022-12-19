@@ -122,5 +122,5 @@ public class Garaje {
         this.horaApertura = horaApertura;
     }
 
-    
+
 }
