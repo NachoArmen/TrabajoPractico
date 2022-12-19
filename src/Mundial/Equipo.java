@@ -14,6 +14,9 @@ public class Equipo {
 
     }
 
+    public Equipo(String nombreEquipo){
+        this.setNombreEquipo(nombreEquipo);
+    }
 
     public String getNombreEquipo() {
         return nombreEquipo;
