@@ -6,10 +6,13 @@ public class EtapaMundial {
     private String descripcionEtapa;
     private ArrayList<Partido> partidos;
 
+    private ArrayList<Equipo> equiposAvanzan;
+
 
 
     EtapaMundial(){
-
+      this.partidos= new ArrayList<Partido>();
+      this.equiposAvanzan= new ArrayList<Equipo>();
     }
     public String getDescripcionEtapa() {
 
@@ -27,5 +30,13 @@ public class EtapaMundial {
 
     public void setPartidos(ArrayList<Partido> partidos) {
         this.partidos = partidos;
+    }
+
+    public ArrayList<Equipo> getEquiposAvanzan() {
+        return equiposAvanzan;
+    }
+
+    public void setEquiposAvanzan(ArrayList<Equipo> equiposAvanzan) {
+        this.equiposAvanzan = equiposAvanzan;
     }
 }
