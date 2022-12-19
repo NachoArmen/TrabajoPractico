@@ -7,7 +7,7 @@ public class Llave extends EtapaMundial {
 
     public void jugarPartidos(ArrayList<Equipo> equipos){
         for (int i=0; i<equipos.size(); i+=2){
-            getPartidos().add(new Partido(new Date(),equipos.get(i),equipos.get(i+1));
+            getPartidos().add(new Partido(new Date(),equipos.get(i),equipos.get(i+1)));
         }
     }
 

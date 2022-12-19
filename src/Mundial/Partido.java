@@ -9,6 +9,9 @@ public class Partido {
   private Resultado resultado;
 
 
+    Partido(){
+
+    }
     Partido(Date fecha, Equipo local, Equipo visitante){
         this.fecha= fecha;
         this.local= local;
@@ -31,7 +34,10 @@ public class Partido {
     }
 
 
-
+    public void anotarGoles(int golesLocal,int golesVisitante){
+        this.getResultado().setGolesLocal(golesLocal);
+        this.getResultado().setGolesVisitante(golesVisitante);
+    }
 
 
 
