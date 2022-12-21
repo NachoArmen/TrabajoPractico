@@ -1,5 +1,4 @@
 package SistemaGaraje;
-import Vehiculos.Vehiculo;
 
 import java.util.ArrayList;
 
@@ -17,7 +16,7 @@ public class Garaje {
     Garaje(){
 
     }
-    Garaje(int horaApertura, int capacidadMaxima){
+    public Garaje(int horaApertura, int capacidadMaxima){
         this.setHoraApertura(horaApertura);
         this.setCapacidadMaxima(capacidadMaxima);
     }
@@ -76,7 +75,7 @@ public class Garaje {
     }
 
     public void setMaximoAlcanzado(boolean maximoAlcanzado) {
-        this.maximoAlcanzado = maximoAlcanzado;
+        this.maximoAlcanzado = false;
     }
 
     // BOOLEAN PARA CAPACIDAD MAXIMA
@@ -85,9 +84,10 @@ public class Garaje {
     }
 
     // AGREGO VEHICULO SI NO SE CUMPLE LA CONDICION ANTERIOR
-    public void addVehiculo(Vehiculo vehiculos){
-        if (topeMaximo())return;
-        this.vehiculos.add(vehiculos);
+    public void addVehiculo(Vehiculo vehiculo){
+        if (topeMaximo()) {
+            this.vehiculos.add(vehiculo);
+        }
     }
 
     // PROMEDIO DE KM TOTAL

@@ -1,4 +1,4 @@
-package Vehiculos;
+package SistemaGaraje;
 
 public class Moto extends Vehiculo {
     private String cilindrada;

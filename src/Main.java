@@ -1,8 +1,8 @@
-package SistemaGaraje;
 import Mundial.Equipo;
 import Mundial.Grupo;
 import Mundial.Llave;
-import Vehiculos.*;
+import SistemaGaraje.*;
+
 
 import java.util.ArrayList;
 
@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
 
          // GARAJE
-         Garaje garajePrincipal = new Garaje(8, 4);
+        Garaje garajePrincipal = new Garaje(8, 4);
          Coche vwGol = new Coche("volkswagen", 300, "LLP271", "gris", 3);
          Coche audiA5 = new Coche("audi", 150, "AD179CB", "negro", 5);
          Coche bmwX8 = new Coche("bmw", 2000, "IUF834", "blanco", 5);
