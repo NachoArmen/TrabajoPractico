@@ -12,13 +12,14 @@ public class Llave extends EtapaMundial {
     }
 
     public ArrayList<Equipo> getEquiposAvanzan(){
+        ArrayList<Equipo> avanzados= new ArrayList<Equipo>();
         for (int i=0; i< getPartidos().size();i++){
             if (getPartidos().get(i).getResultado().isGanoLocal()){
-                this.getEquiposAvanzan().add(getPartidos().get(i).getLocal());
+                avanzados.add(getPartidos().get(i).getLocal());
             }else{
-                this.getEquiposAvanzan().add(getPartidos().get(i).getVisitante());
+               avanzados.add(getPartidos().get(i).getVisitante());
             }
         }
-        return getEquiposAvanzan();
+        return avanzados;
     }
 }

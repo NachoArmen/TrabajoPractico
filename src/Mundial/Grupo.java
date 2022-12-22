@@ -14,19 +14,17 @@ public class Grupo extends EtapaMundial{
     }
 
     public ArrayList<Equipo> getEquiposAvanzan(){
+        ArrayList<Equipo> avanzados = new ArrayList<Equipo>();
         for (int i=0; i<getPartidos().size();i++){
             if (getPartidos().get(i).getResultado().isGanoLocal()){
-                getPartidos().get(i).getLocal().puntajeTotal();
+                //getPartidos().get(i).getLocal().puntajeTotal();
+                avanzados.add(getPartidos().get(i).getLocal());
             }else{
-                getPartidos().get(i).getVisitante().puntajeTotal();
-            }
-            if (getPartidos().get(i).getLocal().getPuntos()>=6){
-                this.getEquiposAvanzan().add(getPartidos().get(i).getLocal());
-            } else if (getPartidos().get(i).getVisitante().getPuntos()>=6) {
-                this.getEquiposAvanzan().add(getPartidos().get(i).getVisitante());
+                //getPartidos().get(i).getVisitante().puntajeTotal();
+                avanzados.add(getPartidos().get(i).getVisitante());
             }
         }
-        return getEquiposAvanzan();
+        return avanzados;
     }
 
     public Grupo(){

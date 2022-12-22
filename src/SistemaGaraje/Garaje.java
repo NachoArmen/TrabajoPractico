@@ -19,9 +19,10 @@ public class Garaje {
     public Garaje(int horaApertura, int capacidadMaxima){
         this.setHoraApertura(horaApertura);
         this.setCapacidadMaxima(capacidadMaxima);
+        this.vehiculos= new ArrayList<Vehiculo>();
     }
 
-    Garaje(int horaApertura,int capacidadMaxima, int capacidadActual, double precioRueda){
+    public Garaje(int horaApertura,int capacidadMaxima, int capacidadActual, double precioRueda){
         this.setHoraApertura(horaApertura);
         this.setCapacidadMaxima(capacidadMaxima);
         this.setCapacidadActual(capacidadActual);

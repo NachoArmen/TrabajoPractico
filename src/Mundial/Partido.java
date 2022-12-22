@@ -16,6 +16,7 @@ public class Partido {
         this.fecha= fecha;
         this.local= local;
         this.visitante= visitante;
+        this.resultado= new Resultado();
     }
 
 
@@ -40,6 +41,7 @@ public class Partido {
     }
 
 
-
-
+    public void setResultado(Resultado resultado) {
+        this.resultado = resultado;
+    }
 }

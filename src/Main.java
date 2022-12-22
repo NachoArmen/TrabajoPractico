@@ -113,11 +113,11 @@ public class Main {
          partidosGrupo2.getPartidos().get(1).anotarGoles(0, 2);
          partidosGrupo2.getPartidos().get(2).anotarGoles(4, 3);
          partidosGrupo2.getPartidos().get(3).anotarGoles(2, 1);
-         partidosGrupo2.getPartidos().get(4).anotarGoles(5, 2);
+         partidosGrupo2.getPartidos().get(4).anotarGoles(0, 2);
          partidosGrupo2.getPartidos().get(5).anotarGoles(1, 7);
 
          partidosGrupo3.jugarPartidos(grupo3);
-         partidosGrupo3.getPartidos().get(0).anotarGoles(3, 3);
+         partidosGrupo3.getPartidos().get(0).anotarGoles(3, 0);
          partidosGrupo3.getPartidos().get(1).anotarGoles(0, 2);
          partidosGrupo3.getPartidos().get(2).anotarGoles(4, 3);
          partidosGrupo3.getPartidos().get(3).anotarGoles(2, 1);
@@ -125,7 +125,7 @@ public class Main {
          partidosGrupo3.getPartidos().get(5).anotarGoles(1, 7);
 
          partidosGrupo4.jugarPartidos(grupo4);
-         partidosGrupo4.getPartidos().get(0).anotarGoles(3, 3);
+         partidosGrupo4.getPartidos().get(0).anotarGoles(3, 0);
          partidosGrupo4.getPartidos().get(1).anotarGoles(0, 2);
          partidosGrupo4.getPartidos().get(2).anotarGoles(4, 3);
          partidosGrupo4.getPartidos().get(3).anotarGoles(2, 1);
